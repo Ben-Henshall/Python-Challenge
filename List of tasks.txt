@@ -1,6 +1,7 @@
 0. Calculate 2^38
 1. Shift letters up, ignoring punctuation (e.g. a changes to c, d changes to f) (Apply cipher to URL)
 2. Search through list of symbols to find rare ones. Uses dicts.
-3. Search through text finding lowercase letters surrounded by exactly 3 uppercse letters on either side
+3. Search through text finding lowercase letters surrounded by exactly 3 uppercase letters on either side
 4. Open URLs, extract number then open new URL using the new number
 5. Load pickle object from banner.p, each object represents a line of characters, e.g. [[" ", "5"], ["#", "10"], [" ", "5"]] represents 5 characters of " " followed by 10 characters of "#" followed by 5 characters of " ". Results in ASCII art of the URL.
+6. Use the zip archive to cycle through the text files, starting from 90052 then reading the file that is linked inside the previosu text document (e.g. 90052.txt contains 50216, so next file to look at is 50216). Collected the zip file comments using zipfile library and print them out.
